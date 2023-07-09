@@ -1,3 +1,4 @@
+import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 export default function Product() {
     // const products = ["Laptops","Desktops","Monitors","VGA"];
     const products = [{id:1,name:"Laptops",price:"$2500"},
@@ -10,7 +11,15 @@ export default function Product() {
         </h3>) );
     return(
         <>
-            {productList}
+        <div>
+        <Card>
+                <CardBody>
+                    {productList}
+                </CardBody>
+            </Card>
+        </div>
+            
+            
         </>
     );
 }

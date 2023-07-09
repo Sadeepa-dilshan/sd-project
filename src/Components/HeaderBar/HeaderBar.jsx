@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 function HeaderBar() {
     return(
@@ -23,6 +24,7 @@ function HeaderBar() {
                     <li className="nav-item">
                         <Link className="nav-link" to="/login">Log in</Link>
                     </li>
+                    
                 </ul>
             
             </nav>
